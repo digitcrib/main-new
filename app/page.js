@@ -5,6 +5,8 @@ import CTAbutton from "../components/CTAbutton";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
+import AboutIcon from '/public/home/about-digitcrib/about-icon.svg';
+
 export default function Home() {
   return (
 
@@ -13,7 +15,7 @@ export default function Home() {
       <Navbar />
 
       <>
-        <div className="py-10">
+        <div className="py-8 bg-[#E7E7E7]">
           <div className="flex flex-col items-center justify-between gap-8">
             <h1 className="w-3/4 uppercase font-Bebas_Neue text-6xl text-center mb-2">Empowering Your <span className="font-Luxurious_Script font-normal normal-case">Digital</span> <span className="text-[#F68333]">Vision</span></h1>
             <div className="w-full h-[27rem] relative">
@@ -28,24 +30,32 @@ export default function Home() {
       </>
 
       <>
-        <div className="px-8 py-10">
+        <div className="px-8 py-16 bg-[#373737]">
           <div className="flex flex-col items-center justify-center gap-10">
-            <div>
-              <h2 className="uppercase font-Bebas_Neue text-5xl text-center mb-2">Our Services</h2>
-              <p className="font-Inter text-base text-center">Our approach is value-driven, result-oriented, and tailored to your goals. We go above and beyond to ensure you leverage the latest technology for business success.</p> 
+            <div className="text-white">
+              <h2 className="uppercase font-Bebas_Neue text-5xl mb-2">Our Services</h2>
+              <p className="font-Inter text-base">Our approach is value-driven, result-oriented, and tailored to your goals. We go above and beyond to ensure you leverage the latest technology for business success.</p> 
             </div>
-            <ul className="font-Bebas_Neue text-[32px]">
-              <li className="border-b-2 border-black mb-4">01. UI/UX Designing</li>
-              <li className="border-b-2 border-black mb-4">02. Web Development</li>
-              <li className="border-b-2 border-black">03. Digital Marketing</li>
-            </ul>
-            <CTAbutton />
+            <div className="grid grid-cols-1 justify-items-center content-center gap-10 text-black">
+              <div className="bg-[#E7E7E7] p-6 rounded-2xl shadow-our_services_card">
+                <h3 className="font-Bebas_Neue text-[40px]">01. UI/UX Designing</h3>
+                <p className="font-Inter text-base leading-[140%]">At Digitcrib, we craft visually compelling and user-friendly designs that transform ideas into seamless digital experiences. Our UI/UX design services are tailored to solve real-world problems, drive engagement, and ensure your audience connects with your brand effortlessly</p>
+              </div>
+              <div className="bg-[#E7E7E7] p-6 rounded-2xl shadow-our_services_card">
+                <h3 className="font-Bebas_Neue text-[40px]">02. Web Development</h3>
+                <p className="font-Inter text-base leading-[140%]">At Digitcrib, we craft visually compelling and user-friendly designs that transform ideas into seamless digital experiences. Our UI/UX design services are tailored to solve real-world problems, drive engagement, and ensure your audience connects with your brand effortlessly</p>
+              </div>
+              <div className="bg-[#E7E7E7] p-6 rounded-2xl shadow-our_services_card">
+                <h3 className="font-Bebas_Neue text-[40px]">03. Digital Marketing</h3>
+                <p className="font-Inter text-base leading-[140%]">At Digitcrib, we craft visually compelling and user-friendly designs that transform ideas into seamless digital experiences. Our UI/UX design services are tailored to solve real-world problems, drive engagement, and ensure your audience connects with your brand effortlessly</p>
+              </div>
+            </div>
           </div>
         </div>
       </>
 
       <>
-        <div className="px-8 py-10">
+        <div className="px-8 py-16 bg-[#E7E7E7]">
           <div className="flex flex-col items-center justify-center gap-10">
             <h2 className="uppercase font-Bebas_Neue text-5xl text-center mb-2">Why Choose us</h2>
             <div className="grid grid-cols-1 justify-items-center content-center gap-10">
@@ -77,9 +87,9 @@ export default function Home() {
       </>
 
       <>
-        <div className="px-8 py-10">
+        <div className="px-8 py-16 bg-[#F68333]">
           <div className="flex flex-col items-center justify-center gap-10">
-            <div>
+            <div className="text-white">
               <h2 className="uppercase font-Bebas_Neue text-5xl text-center mb-2">Our Portfolio</h2>
               <p className="font-Inter text-base text-center">Work that speaks for itself</p>
             </div>    
@@ -126,34 +136,34 @@ export default function Home() {
       </>
 
       <>
-        <div className="px-8 pt-10 bg-[#F68333]">
-          <div className="flex flex-col items-center justify-center gap-10">
+        <div className="pt-16 bg-[#F68333]">
+          <div className="flex flex-col items-center justify-center gap-10 px-8">
             <div>
               <div className="flex items-center justify-between">
-              <h2 className="w-2/3 uppercase font-Bebas_Neue text-7xl leading-[80%] text-white">About Digitcrib</h2>
-              <Image className="pointer-events-none" src="/home/globe.png" alt="vector of globe" width={110} height={110} />
+              <h2 className="w-2/3 uppercase font-Bebas_Neue text-6xl leading-[100%] text-white">About Digitcrib</h2>
+              <AboutIcon className="pointer-events-none"/>
               </div>
               <p className="font-Inter text-base">Where Passion Meets Innovation</p>
             </div>
             <p className="font-Inter font-medium text-base">
               Digitcrib is a collective of passionate designers and developers dedicated to helping businesses thrive online. From branding to advanced web solutions, we are more than just an agency—we’re your strategic partners in growth.
             </p>
-            <Image className="pointer-events-none" src="/home/vector-guy.png" alt="vector image of a guy standing" width="265" height="414" ></Image>
           </div>
+          <Image className="w-full h-auto pointer-events-none" src="/home/about-digitcrib/about-vector-image.png" alt="vector image of a guy with a tea cup and a woman waving her hand" width="426" height="464" />
         </div>
       </>
 
       <>
-        <div className="px-8 py-10">
-            <h2 className="uppercase font-Bebas_Neue text-5xl">Your <br/> Roadmap to Success</h2>
+        <div className="px-8 pt-16 bg-[#E7E7E7]">
+            <h2 className="uppercase font-Bebas_Neue text-5xl">Easy 4- STEP <br/> Roadmap <span className="text-[#F68333]">to</span> Success</h2>
         </div>
       </>
 
       <>
-        <div className="px-8 py-10">
+        <div className="px-8 py-16 bg-[#E7E7E7]">
           <div className="flex flex-col items-center justify-center gap-10">
             <h2 className="leading-[42px] uppercase font-Inter font-extrabold text-[42px] text-center">Asked Questions</h2>
-            <div className='accordion-group p-4 shadow-lg rounded-2xl border' data-accordion="default-accordion">
+            <div className='accordion-group p-4 shadow-lg rounded-2xl border border-gray-300' data-accordion="default-accordion">
 
               <div className='accordion pb-4 border-b border-solid border-gray-400 active' id='basic-heading-one-with-arrow-always-open'>
                 <button className='accordion-toggle group inline-flex items-center justify-between  text-black w-full transition duration-500 hover:text-black accordion-active:text-black always-open ' aria-controls='basic-collapse-one-with-arrow-always-open'>

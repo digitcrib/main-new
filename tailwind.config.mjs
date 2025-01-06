@@ -22,6 +22,7 @@ export default {
         foreground: "var(--foreground)",
       },
       boxShadow: {
+        'our_services_card': '6px 6px 0px rgba(0, 0, 0, 1)',
         'custom_primary_button': '5px 5px 0px rgba(109, 34, 0, 1)',
         'custom_primary_button_hover': '5px 5px 0px rgba(109, 34, 0, 1)', 
         'custom_primary_button_active': 'inset 3px 3px 4px rgba(109, 34, 0, 1) ',        
