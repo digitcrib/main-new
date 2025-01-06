@@ -10,19 +10,17 @@ export default function Home() {
 
     <>
 
-      <Navbar />
-
       <>
         <div className="py-10">
-          <div className="flex flex-col items-center justify-between gap-8">           
-            <h1 className="w-3/4 uppercase font-Bebas_Neue text-6xl text-center">Empowering Your <span className="font-Luxurious_Script font-normal normal-case">Digital</span> <span className="text-[#F68333]">Vision</span></h1>
-            <div className="w-full h-[27rem] relative">
-              <Image className="absolute -top-40 w-[400px] h-[612px] px-0 pointer-events-none" src="/home/hero-image.png" alt="Hero Image" width={1000} height={1000} />
+          <div className="flex flex-col items-center justify-between gap-8 relative">
+            <div className="w-full h-[40rem] flex flex-col items-center justify-between">
+              <h1 className="w-3/4 uppercase font-Bebas_Neue text-6xl text-center mb-2">Empowering Your <span className="font-Luxurious_Script font-normal normal-case">Digital</span> <span className="text-[#F68333]">Vision</span></h1>
+              <Image className="absolute top-16 w-full h-auto px-0 pointer-events-none" src="/home/hero-image.png" alt="Hero Image" width={1000} height={1000} />
             </div>
-            <div className="flex flex-col items-center justify-center gap-8 px-8">
+            <div className="flex flex-col items-center justify-between gap-8 px-8 mt-16">
               <p className="font-Inter font-normal text-base text-center">We’re a passionate team of creatives and strategists committed to designing impactful digital experiences. At Digitcrib, we help your business stand out with bespoke web solutions that deliver results.</p>
-              <CTAbutton />  
-            </div>                          
+              <CTAbutton />
+            </div>            
           </div>
         </div>
       </>
