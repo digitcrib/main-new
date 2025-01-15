@@ -4,8 +4,9 @@ import Image from "next/image";
 import CTAbutton from "../components/CTAbutton";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ContactFormButton from "@/components/ContactFormButton";
 
-import AboutIcon from '/public/home/about-digitcrib/about-icon.svg';
+import BgIcon from '/public/home/about-digitcrib/bg-icon.svg';
 
 export default function Home() {
   return (
@@ -15,15 +16,17 @@ export default function Home() {
       <Navbar />
 
       <>
-        <div className="py-8 bg-[#E7E7E7]">
+        <div className="py-8 bg-[#FDFDFD]">
           <div className="flex flex-col items-center justify-between gap-8">
             <h1 className="w-3/4 uppercase font-Bebas_Neue text-6xl text-center mb-2">Empowering <br/> Your <span className="font-Luxurious_Script font-normal normal-case">Digital</span> <span className="text-[#F68333]"> <br/>Vision</span></h1>
             <div className="w-full flex justify-center items-center h-[23rem] relative">
-              <Image className="absolute -top-[102px] w-[20rem] h-auto -ml-[2rem] px-0 pointer-events-none" src="/home/hero-image.png" alt="Hero Image" width={1000} height={1000} />
+              <Image className="absolute -top-[102px] w-[20rem] h-auto -ml-[2rem] px-0 pointer-events-none" src="/home/hero-image.png" alt="Hero Image" width={1000} height={1000} quality={100}  />
             </div>
             <div className="flex flex-col items-center justify-between gap-8 px-8">
               <p className="font-Inter font-normal text-base text-center">We’re a passionate team of creatives and strategists committed to designing impactful digital experiences. At Digitcrib, we help your business stand out with bespoke web solutions that deliver results.</p>
-              <CTAbutton />
+
+              <ContactFormButton />
+
             </div>            
           </div>
         </div>
@@ -37,15 +40,15 @@ export default function Home() {
               <p className="font-Inter text-base">Our approach is value-driven, result-oriented, and tailored to your goals. We go above and beyond to ensure you leverage the latest technology for business success.</p> 
             </div>
             <div className="grid grid-cols-1 justify-items-center content-center gap-10 text-black">
-              <div className="bg-[#E7E7E7] p-6 rounded-2xl shadow-our_services_card">
+              <div className="bg-[#FDFDFD] p-6 rounded-2xl shadow-our_services_card">
                 <h3 className="font-Bebas_Neue text-[40px]">01. UI/UX Designing</h3>
                 <p className="font-Inter text-base leading-[140%]">At Digitcrib, we craft visually compelling and user-friendly designs that transform ideas into seamless digital experiences. Our UI/UX design services are tailored to solve real-world problems, drive engagement, and ensure your audience connects with your brand effortlessly</p>
               </div>
-              <div className="bg-[#E7E7E7] p-6 rounded-2xl shadow-our_services_card">
+              <div className="bg-[#FDFDFD] p-6 rounded-2xl shadow-our_services_card">
                 <h3 className="font-Bebas_Neue text-[40px]">02. Web Development</h3>
                 <p className="font-Inter text-base leading-[140%]">At Digitcrib, we craft visually compelling and user-friendly designs that transform ideas into seamless digital experiences. Our UI/UX design services are tailored to solve real-world problems, drive engagement, and ensure your audience connects with your brand effortlessly</p>
               </div>
-              <div className="bg-[#E7E7E7] p-6 rounded-2xl shadow-our_services_card">
+              <div className="bg-[#FDFDFD] p-6 rounded-2xl shadow-our_services_card">
                 <h3 className="font-Bebas_Neue text-[40px]">03. Digital Marketing</h3>
                 <p className="font-Inter text-base leading-[140%]">At Digitcrib, we craft visually compelling and user-friendly designs that transform ideas into seamless digital experiences. Our UI/UX design services are tailored to solve real-world problems, drive engagement, and ensure your audience connects with your brand effortlessly</p>
               </div>
@@ -55,13 +58,13 @@ export default function Home() {
       </>
 
       <>
-        <div className="px-8 py-16 bg-[#E7E7E7]">
+        <div className="px-8 py-16 bg-[#FDFDFD]">
           <div className="flex flex-col items-center justify-center gap-10">
             <h2 className="uppercase font-Bebas_Neue text-5xl text-center mb-2">Why Choose us</h2>
             <div className="grid grid-cols-1 justify-items-center content-center gap-10">
 
               <div className="w-[16rem] flex flex-col items-center justify-center text-center gap-1">
-                <Image className="pointer-events-none" src="/home/why-choose-us/Picture-1.png" alt="vector image of man sipping tea" width={300} height={300} />
+                <Image className="pointer-events-none" src="/home/why-choose-us/Picture-1.jpg" alt="vector image of man sipping tea" width={300} height={300} />
                 <div className="font-Bebas_Neue font-normal text-3xl mt-2">2 Years +</div>
                 <p className="font-Inter text-base">Industry Experience </p>
               </div>
@@ -136,16 +139,14 @@ export default function Home() {
       </>
 
       <>
-        <div className="pt-16 bg-[#F68333]">
-          <div className="flex flex-col items-center justify-center gap-10 px-8">
-            <div>
-              <div className="flex items-center justify-between">
+        <div className="pt-16 bg-[#F68333] relative">
+          <BgIcon className="absolute z-0 top-8 right-0 pointer-events-none" />
+          <div className="flex flex-col items-start justify-center gap-10 px-8">
+            <div className="z-10">
               <h2 className="w-2/3 uppercase font-Bebas_Neue text-6xl leading-[100%] text-white">About Digitcrib</h2>
-              <AboutIcon className="pointer-events-none"/>
-              </div>
               <p className="font-Inter text-base">Where Passion Meets Innovation</p>
             </div>
-            <p className="font-Inter font-medium text-base">
+            <p className="font-Inter font-medium text-base z-10">
               Digitcrib is a collective of passionate designers and developers dedicated to helping businesses thrive online. From branding to advanced web solutions, we are more than just an agency—we’re your strategic partners in growth.
             </p>
           </div>

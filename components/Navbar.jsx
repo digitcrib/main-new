@@ -25,29 +25,25 @@ export default function Navbar() {
 
         {/* Logo */}
         <div>
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" clipRule="evenodd" d="M18.5055 6.07118C20.183 6.07118 21.5428 4.7121 21.5428 3.03559C21.5428 1.35908 20.183 0 18.5055 0C16.8282 0 15.4684 1.35908 15.4684 3.03559C15.4684 4.7121 16.8282 6.07118 18.5055 6.07118Z" fill="#6D758F"/>
-            <path fillRule="evenodd" clipRule="evenodd" d="M18.5055 14.0355C20.183 14.0355 21.5428 12.6765 21.5428 11C21.5428 9.32342 20.183 7.96436 18.5055 7.96436C16.8282 7.96436 15.4684 9.32342 15.4684 11C15.4684 12.6765 16.8282 14.0355 18.5055 14.0355Z" fill="#6D758F"/>
-            <path fillRule="evenodd" clipRule="evenodd" d="M18.5055 21.9999C20.183 21.9999 21.5428 20.6408 21.5428 18.9643C21.5428 17.2878 20.183 15.9287 18.5055 15.9287C16.8282 15.9287 15.4684 17.2878 15.4684 18.9643C15.4684 20.6408 16.8282 21.9999 18.5055 21.9999Z" fill="#6D758F"/>
-            <path fillRule="evenodd" clipRule="evenodd" d="M10.7715 14.0355C12.449 14.0355 13.8088 12.6765 13.8088 11C13.8088 9.32342 12.449 7.96436 10.7715 7.96436C9.09416 7.96436 7.73436 9.32342 7.73436 11C7.73436 12.6765 9.09416 14.0355 10.7715 14.0355Z" fill="#6D758F"/>
-            <path fillRule="evenodd" clipRule="evenodd" d="M10.7715 21.9999C12.449 21.9999 13.8088 20.6408 13.8088 18.9643C13.8088 17.2878 12.449 15.9287 10.7715 15.9287C9.09416 15.9287 7.73436 17.2878 7.73436 18.9643C7.73436 20.6408 9.09416 21.9999 10.7715 21.9999Z" fill="#6D758F"/>
-            <path fillRule="evenodd" clipRule="evenodd" d="M3.03736 21.9999C4.71476 21.9999 6.07455 20.6408 6.07455 18.9643C6.07455 17.2878 4.71476 15.9287 3.03736 15.9287C1.35997 15.9287 0.000167847 17.2878 0.000167847 18.9643C0.000167847 20.6408 1.35997 21.9999 3.03736 21.9999Z" fill="#6D758F"/>
-          </svg> 
+          <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.4408 13.8056H17.4406V8.4755C17.4406 2.83482 13.6845 0 8.72029 0C3.75607 0 0 2.83482 0 8.47813V13.8082H4.99581V19.1383C4.99581 24.7816 8.74924 27.6164 13.7161 27.6164C18.6829 27.6164 22.4364 24.7816 22.4364 19.1383V13.8082H18.4408V13.8056Z" fill="#F68333"/>
+          </svg>
         </div>
 
         {/* Hamburger menu button */}
         <button
           onClick={toggleSidebar}
-          className=" z-50 text-black rounded-md focus:outline-none transition-transform duration-300 ease-in-out"
+          className=" z-30 text-black rounded-md focus:outline-none transition-transform duration-300 ease-in-out"
         >
           {isOpen ? (
             // X icon
-            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            <svg className='pr-[2px]' width="20" height="20" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.3334 25L1.33337 1M25.3334 1L1.33337 25" stroke="white" strokeWidth="3" strokeLinecap="round"/>
             </svg>
+
           ) : (
             // Hamburger icon
-            <svg width="26" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.11484 3.72412H22.3148" stroke="#353E5C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M3.11484 20.2759H22.3148" stroke="#353E5C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M3.11484 12H22.3148" stroke="#353E5C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -60,8 +56,8 @@ export default function Navbar() {
 
       {/* Sidebar */}
       <div
-        className={`fixed py-[4rem] z-40 sm:py-[6rem] px-6 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full bg-[#F68333] text-white transition-transform duration-300 ease-in-out  ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed py-[4rem] z-20 sm:py-[6rem] px-6 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full bg-[#F68333] text-white transition-transform duration-300 ease-in-out  ${
+          isOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
         {/* Sidebar Content */}
