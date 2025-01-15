@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 
 import BendArrow from '/public/bend-arrow.svg';
 
-export default function ContactFormButton() {
+export default function FooterCTAButton() {
   
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
@@ -46,19 +46,21 @@ export default function ContactFormButton() {
   return (
     <>
 
-      <div className='w-full h-auto bg-white'>
+      <div className='w-full h-auto bg-transparent'>
+
+        {/* {isOpen ? ( */}
 
           <div className={`${ isOpen? 'block' : 'hidden' } fixed inline-flex justify-end items-center top-7 right-8 w-full h-auto z-40 text-red-500 `} >   
-            <svg onClick={toggleSidebar} className='w-8 h-auto pr-[2px]' width="20" height="20" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg onClick={toggleSidebar} className='pr-[2px]' width="20" height="20" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M25.3334 25L1.33337 1M25.3334 1L1.33337 25" stroke="white" strokeWidth="3" strokeLinecap="round"/>
             </svg>
           </div>
 
-          <button onClick={toggleSidebar} className='w-full my-2 bg-primary_orange text-white shadow-custom_primary_button hover:shadow-custom_primary_button_hover active:shadow-custom_primary_button_active active:translate-y-1 transition-all duration-200 font-Space_Grotesk font-normal text-xsm text-center py-3 rounded-full border border-black' >BECOME OUR CLIENT&ensp;
-            <span className='text-lg font-light align-middle'>
-            +
-            </span>
-          </button>
+        {/* // ) : ( */}
+
+        <button onClick={toggleSidebar} className='w-full font-Space_Grotesk font-normal bg-[#F68333] shadow-custom_primary_button hover:shadow-custom_primary_button_hover active:shadow-custom_primary_button_active active:translate-y-1 transition-all duration-200 rounded-3xl py-2'>Let's Talk</button>
+
+        {/* // )} */}
 
       </div>
 

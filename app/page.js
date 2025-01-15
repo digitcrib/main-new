@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ContactFormButton from "@/components/ContactFormButton";
 
+import HeroImg from '/public/home/hero-image.svg';
 import BgIcon from '/public/home/about-digitcrib/bg-icon.svg';
 
 export default function Home() {
@@ -19,8 +20,8 @@ export default function Home() {
         <div className="py-8 bg-[#FDFDFD]">
           <div className="flex flex-col items-center justify-between gap-8">
             <h1 className="w-3/4 uppercase font-Bebas_Neue text-6xl text-center mb-2">Empowering <br/> Your <span className="font-Luxurious_Script font-normal normal-case">Digital</span> <span className="text-[#F68333]"> <br/>Vision</span></h1>
-            <div className="w-full flex justify-center items-center h-[23rem] relative">
-              <Image className="absolute -top-[102px] w-[20rem] h-auto -ml-[2rem] px-0 pointer-events-none" src="/home/hero-image.png" alt="Hero Image" width={1000} height={1000} quality={100}  />
+            <div className="w-full flex justify-center items-center h-[26rem] relative">
+              <HeroImg className="absolute -top-[140px] w-[24rem] -ml-[2rem] px-0 pointer-events-none" src="/home/hero-image.png" alt="Hero Image" />
             </div>
             <div className="flex flex-col items-center justify-between gap-8 px-8">
               <p className="font-Inter font-normal text-base text-center">We’re a passionate team of creatives and strategists committed to designing impactful digital experiences. At Digitcrib, we help your business stand out with bespoke web solutions that deliver results.</p>

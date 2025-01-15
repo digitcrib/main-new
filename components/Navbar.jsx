@@ -25,7 +25,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <div>
-          <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='w-8 h-auto' width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M18.4408 13.8056H17.4406V8.4755C17.4406 2.83482 13.6845 0 8.72029 0C3.75607 0 0 2.83482 0 8.47813V13.8082H4.99581V19.1383C4.99581 24.7816 8.74924 27.6164 13.7161 27.6164C18.6829 27.6164 22.4364 24.7816 22.4364 19.1383V13.8082H18.4408V13.8056Z" fill="#F68333"/>
           </svg>
         </div>
@@ -37,13 +37,13 @@ export default function Navbar() {
         >
           {isOpen ? (
             // X icon
-            <svg className='pr-[2px]' width="20" height="20" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className='w-8 h-auto pr-[2px]' width="20" height="20" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M25.3334 25L1.33337 1M25.3334 1L1.33337 25" stroke="white" strokeWidth="3" strokeLinecap="round"/>
             </svg>
 
           ) : (
             // Hamburger icon
-            <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className='w-10 h-auto' width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.11484 3.72412H22.3148" stroke="#353E5C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M3.11484 20.2759H22.3148" stroke="#353E5C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M3.11484 12H22.3148" stroke="#353E5C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
