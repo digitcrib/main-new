@@ -1,14 +1,21 @@
 'use client';
 
 import Image from "next/image";
-import CTAbutton from "../components/CTAbutton";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ContactFormButton from "@/components/ContactFormButton";
+import RoadmapCarousel from "@/components/RoadmapCarousel";
 
-import HeroImg from '/public/home/hero-image.svg';
-import BgIcon from '/public/home/about-digitcrib/bg-icon.svg';
 import HeroText from "@/components/HeroText";
+import HeroImg from '/public/home/hero-image.svg';
+import GShopIco from '/public/GShop.svg';
+import FiveStarIco from "/public/5Star.svg";
+import BgIcon from '/public/home/about-digitcrib/bg-icon.svg';
+import WCUImg1 from "/public/home/why-choose-us/WCU-Picture-1.svg";
+import WCUImg2 from "/public/home/why-choose-us/WCU-Picture-2.svg";
+import WCUImg3 from "/public/home/why-choose-us/WCU-Picture-3.svg";
+import WCUImg4 from "/public/home/why-choose-us/WCU-Picture-4.svg";
+
 
 export default function Home() {
   return (
@@ -19,17 +26,20 @@ export default function Home() {
 
       <>
         <div className="pt-4 pb-8 bg-[#FFFFFF]">
-          <div className="flex flex-col items-center justify-between gap-8 px-8">
-            <HeroText />
-            <div className="w-full flex justify-center items-center h-[26rem] relative">
+          <div className="flex flex-col items-center justify-between gap-8">
+            <HeroText classname=" px-8"/>
+            <div className="w-full flex justify-center items-center h-[26rem] relative px-8">
               <HeroImg className="absolute -top-[8px]  pointer-events-none" src="/home/hero-image.png" alt="Hero Image" />
             </div>
-            <div className="flex flex-col items-center justify-between gap-8">
+            <div className="flex flex-col items-center justify-between gap-8  px-8">
               <p className="font-Inter font-normal text-base text-center">We’re a passionate team of creatives and strategists committed to designing impactful digital experiences. At Digitcrib, we help your business stand out with bespoke web solutions that deliver results.</p>
-
-              <ContactFormButton text={"BECOME OUR CLIENT"} />
-
-            </div>            
+              <ContactFormButton text={"BECOME OUR CLIENT"} />             
+            </div>  
+            <div className="flex justify-center items-center gap-x-2">
+              <GShopIco className="pointer-events-none" />
+              <p className="font-Inter font-normal text-base">Trusted by over 100+ customers</p>
+              <FiveStarIco className="pointer-events-none" />
+            </div>          
           </div>
         </div>
       </>
@@ -67,22 +77,22 @@ export default function Home() {
             <div className="grid grid-cols-1 justify-items-center content-center gap-10">
 
               <div className="w-[16rem] flex flex-col items-center justify-center text-center gap-1">
-                <Image className="pointer-events-none" src="/home/why-choose-us/Picture-1.jpg" alt="vector image of man sipping tea" width={300} height={300} />
+                <WCUImg1 className="w-full h-auto pointer-events-none" />
                 <div className="font-Bebas_Neue font-normal text-3xl mt-2">2 Years +</div>
                 <p className="font-Inter text-base">Industry Experience </p>
               </div>
               <div className="w-[16rem] flex flex-col items-center justify-center text-center gap-1">
-                <Image className="pointer-events-none" src="/home/why-choose-us/Picture-2.png" alt="vector image of 2 man standing" width={300} height={300} />
+                <WCUImg2 className="w-full h-auto pointer-events-none" />
                 <div className="font-Bebas_Neue font-normal text-3xl mt-2">Over 10’s of</div>
                 <p className="font-Inter text-base">successful projects delivered.</p>
               </div>
               <div className="w-[16rem] flex flex-col items-center justify-center text-center gap-1">
-                <Image className="pointer-events-none" src="/home/why-choose-us/Picture-3.png" alt="vector image of a guy standing and using a laptop" width={300} height={300} />
+                <WCUImg3 className="w-full h-auto pointer-events-none" />
                 <div className="font-Bebas_Neue font-normal text-3xl mt-2">100%</div>
                 <p className="font-Inter text-base">Custom build solution tailored to your vision</p>
               </div>
               <div className="w-[16rem] flex flex-col items-center justify-center text-center gap-1">
-                <Image className="pointer-events-none" src="/home/why-choose-us/Picture-4.png" alt="vector image consisting of a collage of people" width={300} height={300} />
+                <WCUImg4 className="w-full h-auto pointer-events-none" />
                 <div className="font-Bebas_Neue font-normal text-3xl mt-2">Personal Connection</div>
                 <p className="font-Inter text-base">We focus on building good connection with all our clients.</p>
               </div>
@@ -106,7 +116,7 @@ export default function Home() {
 
       <>
         <div className=" bg-[#F68333] relative">
-          <BgIcon className="absolute z-0 -top-4 right-0 pointer-events-none" />
+          <BgIcon className="absolute z-0 -top-8 right-0 pointer-events-none" />
           <div className="flex flex-col items-start justify-center gap-10 px-8">
             <div className="z-10">
               <h2 className="w-2/3 uppercase font-Bebas_Neue text-6xl leading-[100%] text-white">About Digitcrib</h2>
@@ -123,6 +133,9 @@ export default function Home() {
       <>
         <div className="px-8 pt-16 bg-[#FFFFFF]">
             <h2 className="uppercase font-Bebas_Neue text-5xl">Easy 4- STEP <br/> Roadmap <span className="text-[#F68333]">to</span> Success</h2>
+            <div>
+              <RoadmapCarousel />
+            </div>
         </div>
       </>
 
