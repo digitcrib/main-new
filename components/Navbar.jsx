@@ -37,7 +37,7 @@ export default function Navbar() {
         >
           {isOpen ? (
             // X icon
-            <svg className='w-8 h-auto pr-[2px]' width="20" height="20" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className='w-8 h-auto mr-[4px]' width="20" height="20" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M25.3334 25L1.33337 1M25.3334 1L1.33337 25" stroke="white" strokeWidth="3" strokeLinecap="round"/>
             </svg>
 
