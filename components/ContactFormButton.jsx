@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 
 import BendArrow from '/public/bend-arrow.svg';
 
-export default function ContactFormButton() {
+export default function ContactFormButton({text}) {
   
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
@@ -38,7 +38,7 @@ export default function ContactFormButton() {
   return (
     <>
 
-      <div className='w-full h-auto bg-white'>
+      <div className='w-full h-auto bg-transparent'>
 
           <div className={`${ isOpen? 'block' : 'hidden' } fixed inline-flex justify-end items-center top-6 right-8 w-full h-auto z-40 text-red-500 `} >   
             <svg onClick={toggleSidebar} className='w-6 h-auto pr-[2px]' width="20" height="20" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@ export default function ContactFormButton() {
             </svg>
           </div>
 
-          <button onClick={toggleSidebar} className='w-full my-2 bg-primary_orange text-white shadow-custom_primary_button hover:shadow-custom_primary_button_hover active:shadow-custom_primary_button_active active:translate-y-1 transition-all duration-200 font-Space_Grotesk font-normal text-xsm text-center py-3 rounded-full border border-black' >BECOME OUR CLIENT&ensp;
+          <button onClick={toggleSidebar} className='w-full my-2 bg-primary_orange text-white shadow-custom_primary_button hover:shadow-custom_primary_button_hover active:shadow-custom_primary_button_active active:translate-y-1 transition-all duration-200 font-Space_Grotesk font-normal text-xsm text-center py-3 rounded-full border border-black' >{text}&ensp;
             <span className='text-lg font-light align-middle'>
             +
             </span>
@@ -56,17 +56,17 @@ export default function ContactFormButton() {
 
       {/* Contact Sidebar */}
       <div
-        className={`fixed py-[4rem] z-30 sm:py-[6rem] px-10 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full rounded-s-[4rem] bg-black text-white transition-transform duration-300 ease-in-out  ${
+        className={`fixed py-8 z-30 sm:py-[6rem] px-8 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full rounded-s-[4rem] bg-black text-white transition-transform duration-300 ease-in-out overflow-y-auto ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         {/* Sidebar Content */}
-        <nav>
+        <nav className='py-8'>
 
           <form onSubmit={handleSubmit} action="POST"  className="w-full flex flex-col items-center justify-center gap-8 h-full">
 
             <div className='flex flex-col items-center justify-center gap-8'>
-              <p className='w-full self-start font-Inter font-normal text-xl leading-[140%]'>LET’S BUILD SOMETHING GREAT TOGETHER</p>
+              <p className='w-full self-start font-Bebas_Neue font-normal text-[45px] leading-[120%]'>LET’S BUILD SOMETHING GREAT TOGETHER</p>
               <input className='w-full bg-black border-[1.5px] border-white focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-md px-3 py-3 font-Inter font-normal text-lg'  name="name" placeholder="Enter your name*" type="text" />
               <input className='w-full bg-black border-[1.5px] border-white focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-md px-3 py-3 font-Inter font-normal text-lg'  name="phone" placeholder="Phone Number*" type="tel" />
               <input className='w-full bg-black border-[1.5px] border-white focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-md px-3 py-3 font-Inter font-normal text-lg'  name="email" placeholder="Email*" type="email" />

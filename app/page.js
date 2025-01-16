@@ -8,6 +8,7 @@ import ContactFormButton from "@/components/ContactFormButton";
 
 import HeroImg from '/public/home/hero-image.svg';
 import BgIcon from '/public/home/about-digitcrib/bg-icon.svg';
+import HeroText from "@/components/HeroText";
 
 export default function Home() {
   return (
@@ -18,15 +19,15 @@ export default function Home() {
 
       <>
         <div className="pt-4 pb-8 bg-[#FFFFFF]">
-          <div className="flex flex-col items-center justify-between gap-8">
-            <h1 className="w-3/4 uppercase font-Bebas_Neue text-6xl text-center">Empowering <br/> Your <span className="font-Luxurious_Script font-normal normal-case">Digital</span> <span className="text-[#F68333]"> <br/>Vision</span></h1>
+          <div className="flex flex-col items-center justify-between gap-8 px-8">
+            <HeroText />
             <div className="w-full flex justify-center items-center h-[26rem] relative">
               <HeroImg className="absolute -top-[8px]  pointer-events-none" src="/home/hero-image.png" alt="Hero Image" />
             </div>
-            <div className="flex flex-col items-center justify-between gap-8 px-8">
+            <div className="flex flex-col items-center justify-between gap-8">
               <p className="font-Inter font-normal text-base text-center">We’re a passionate team of creatives and strategists committed to designing impactful digital experiences. At Digitcrib, we help your business stand out with bespoke web solutions that deliver results.</p>
 
-              <ContactFormButton />
+              <ContactFormButton text={"BECOME OUR CLIENT"} />
 
             </div>            
           </div>
@@ -53,6 +54,7 @@ export default function Home() {
                 <h3 className="font-Bebas_Neue text-[40px]">03. Digital Marketing</h3>
                 <p className="font-Inter text-base leading-[140%]">At Digitcrib, we craft visually compelling and user-friendly designs that transform ideas into seamless digital experiences. Our UI/UX design services are tailored to solve real-world problems, drive engagement, and ensure your audience connects with your brand effortlessly</p>
               </div>
+              <ContactFormButton text={"LERAN MORE"} />
             </div>
           </div>
         </div>
@@ -97,51 +99,14 @@ export default function Home() {
               <h2 className="uppercase font-Bebas_Neue text-5xl text-center mb-2">Our Portfolio</h2>
               <p className="font-Inter text-base text-center">Work that speaks for itself</p>
             </div>    
-            {/* <div className="w-full relative">
-              <div className="swiper multiple-slide-carousel swiper-container relative">
-              <div className="swiper-wrapper mb-16">
-                <div className="swiper-slide">
-                  <div className="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-                    <span className="text-2xl font-semibold text-indigo-600">Slide 1 </span>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-                    <span className="text-2xl font-semibold text-indigo-600">Slide 2 </span>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-                    <span className="text-2xl font-semibold text-indigo-600">Slide 3 </span>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-                    <span className="text-2xl font-semibold text-indigo-600">Slide 4 </span>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute flex justify-center items-center m-auto left-0 right-0 w-fit bottom-12">
-                <button id="slider-button-left" className="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full  hover:bg-indigo-600 !-translate-x-16" data-carousel-prev>
-                  <svg className="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
-                <button id="slider-button-right" className="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-indigo-600 !translate-x-16" data-carousel-next>
-                  <svg className="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
-              </div>
-              </div>
-            </div> */}
+            <video className="w-full aspect-auto bg-transparent pointer-events-none" src="/home/our-portfolio.mp4" loop autoPlay muted />
           </div>
         </div>
       </>
 
       <>
-        <div className="pt-16 bg-[#F68333] relative">
-          <BgIcon className="absolute z-0 top-8 right-0 pointer-events-none" />
+        <div className=" bg-[#F68333] relative">
+          <BgIcon className="absolute z-0 -top-4 right-0 pointer-events-none" />
           <div className="flex flex-col items-start justify-center gap-10 px-8">
             <div className="z-10">
               <h2 className="w-2/3 uppercase font-Bebas_Neue text-6xl leading-[100%] text-white">About Digitcrib</h2>

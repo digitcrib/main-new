@@ -54,7 +54,7 @@ export default function FooterCTAButton() {
 
       {/* Contact Sidebar */}
       <div
-        className={`fixed py-[4rem] z-30 sm:py-[6rem] px-10 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full rounded-s-[5rem] bg-black text-white transition-transform duration-300 ease-in-out  ${
+        className={`fixed py-[4rem] z-30 sm:py-[6rem] px-10 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full rounded-s-[5rem] bg-black text-white transition-transform duration-300 ease-in-out overflow-y-auto ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
