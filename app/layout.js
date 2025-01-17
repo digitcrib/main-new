@@ -20,6 +20,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <title>DigitCrib</title>
+        <meta name="description" content="Your trusted partner on web" />
+        <meta name="keywords" content="Web Development Services, Digital Marketing Agency, UI/UX Design, Mobile App Development, SEO Experts, Creative Web Design, Performance Marketing, Custom Software Development" />
+        <meta name="author" content="DigitCrib" />
+        <meta property="og:title" content="Home" />
+        <meta property="og:description" content="Home Page" />
+        <meta property="og:image" content="/public/logo.png" />
+        <meta property="og:url" content="https://digitcrib.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://digitcrib.com" />
         <link href="/css/pagedone.css" rel="stylesheet"/>
       </head>
       <body
@@ -27,6 +37,7 @@ export default function RootLayout({ children }) {
       >
         {children}
         <script src="/js/pagedone.js" strategy="LazyOnload"/>
+        <script src="/js/carousel.js" strategy="LazyOnload"/>
       </body>
     </html>
   );

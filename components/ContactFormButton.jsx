@@ -56,7 +56,7 @@ export default function ContactFormButton({text}) {
 
       {/* Contact Sidebar */}
       <div
-        className={`fixed py-8 z-30 sm:py-[6rem] px-8 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full rounded-s-[4rem] bg-black text-white transition-transform duration-300 ease-in-out overflow-y-auto ${
+        className={`fixed py-8 z-30 sm:py-[6rem] px-8 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full bg-black text-white transition-transform duration-300 ease-in-out overflow-y-auto ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

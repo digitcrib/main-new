@@ -28,7 +28,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <FooterImg1 className="pointer-events-none"/>
+            <FooterImg1 className="w-full h-auto pointer-events-none"/>
             <div className='w-full text-white'>
                 <p className='cursor-pointer font-Space_Grotesk font-light text-right mb-2 pr-1'>Privacy Policy</p>
                 <FooterImg2 className="w-full h-auto pointer-events-none"/>

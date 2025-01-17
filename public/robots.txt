@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://digitcrib.com
+
+# Sitemaps
+Sitemap: https://digitcrib.com/sitemap.xml

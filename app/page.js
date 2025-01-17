@@ -103,13 +103,15 @@ export default function Home() {
       </>
 
       <>
-        <div className="px-8 py-16 bg-[#F68333]">
-          <div className="flex flex-col items-center justify-center gap-10">
-            <div className="text-white">
-              <h2 className="uppercase font-Bebas_Neue text-5xl text-center mb-2">Our Portfolio</h2>
+        <div className="pt-16 pb-12 bg-[#F68333]">
+          <div className="w-full flex flex-col items-center justify-center gap-6 overflow-x-hidden">
+            <div className=" px-8 ">
+              <h2 className="uppercase text-white font-Bebas_Neue text-6xl text-center mb-2">Our Portfolio</h2>
               <p className="font-Inter text-base text-center">Work that speaks for itself</p>
-            </div>    
-            <video className="w-full aspect-auto bg-transparent pointer-events-none" src="/home/our-portfolio.mp4" loop autoPlay muted />
+            </div> 
+            <div className="w-[80rem] h-[36rem]">
+              <video className="w-full h-[36rem] aspect-auto bg-transparent pointer-events-none" src="/home/our-portfolio.webm" loop autoPlay muted />
+            </div>              
           </div>
         </div>
       </>

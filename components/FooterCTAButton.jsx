@@ -54,7 +54,7 @@ export default function FooterCTAButton() {
 
       {/* Contact Sidebar */}
       <div
-        className={`fixed py-[4rem] z-30 sm:py-[6rem] px-10 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full rounded-s-[5rem] bg-black text-white transition-transform duration-300 ease-in-out overflow-y-auto ${
+        className={`fixed py-[4rem] z-30 sm:py-[6rem] px-10 md:px-[3rem] lg:px-[4rem] xl:px-[7rem] bxl:px-[10rem] top-0 right-0 h-screen w-full bg-black text-white transition-transform duration-300 ease-in-out overflow-y-auto ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -64,7 +64,7 @@ export default function FooterCTAButton() {
           <form onSubmit={handleSubmit} action="POST"  className="w-full flex flex-col items-center justify-center gap-8 h-full">
 
             <div className='flex flex-col items-center justify-center gap-8'>
-              <p className='w-full self-start font-Inter font-normal text-xl leading-[140%]'>LET’S BUILD SOMETHING GREAT TOGETHER</p>
+              <p className='w-full self-start font-Bebas_Neue font-normal text-[45px] leading-[120%]'>LET’S BUILD SOMETHING GREAT TOGETHER</p>
               <input className='w-full bg-black border-[1.5px] border-white focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-md px-3 py-3 font-Inter font-normal text-lg'  name="name" placeholder="Enter your name*" type="text" />
               <input className='w-full bg-black border-[1.5px] border-white focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-md px-3 py-3 font-Inter font-normal text-lg'  name="phone" placeholder="Phone Number*" type="tel" />
               <input className='w-full bg-black border-[1.5px] border-white focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-md px-3 py-3 font-Inter font-normal text-lg'  name="email" placeholder="Email*" type="email" />

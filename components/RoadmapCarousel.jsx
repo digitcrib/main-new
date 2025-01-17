@@ -88,7 +88,7 @@ function RoadmapCarousel() {
             <div id="keen-slider" className="keen-slider">
             <div className="keen-slider__slide">
                 <blockquote
-                  className=" bg-white border border-black rounded-3xl p-4 shadow-sm sm:p-8 lg:p-12"
+                  className="w-full h-[17rem] bg-white border border-black rounded-3xl p-4 shadow-sm sm:p-8 lg:p-12"
                   >
                   <div>
                       <div className='text-[#F68333] font-Inter text-sm'>Phase 1</div>
@@ -112,7 +112,7 @@ function RoadmapCarousel() {
 
             <div className="keen-slider__slide">
               <blockquote
-                  className=" bg-white border border-black rounded-3xl p-4 shadow-sm sm:p-8 lg:p-12"
+                  className="w-full h-[17rem] bg-white border border-black rounded-3xl p-4 shadow-sm sm:p-8 lg:p-12"
                   >
                   <div>
                       <div className='text-[#F68333] font-Inter text-sm'>Phase 2</div>
@@ -136,7 +136,7 @@ function RoadmapCarousel() {
 
             <div className="keen-slider__slide">
               <blockquote
-                  className=" bg-white border border-black rounded-3xl p-4 shadow-sm sm:p-8 lg:p-12"
+                  className="w-full h-[17rem] bg-white border border-black rounded-3xl p-4 shadow-sm sm:p-8 lg:p-12"
                   >
                   <div>
                       <div className='text-[#F68333] font-Inter text-sm'>Phase 3</div>
@@ -160,7 +160,7 @@ function RoadmapCarousel() {
 
             <div className="keen-slider__slide">
               <blockquote
-                  className=" bg-white border border-black rounded-3xl p-4 shadow-sm sm:p-8 lg:p-12"
+                  className="w-full h-[17rem] bg-white border border-black rounded-3xl p-4 shadow-sm sm:p-8 lg:p-12"
                   >
                   <div>
                       <div className='text-[#F68333] font-Inter text-sm'>Phase 4</div>
