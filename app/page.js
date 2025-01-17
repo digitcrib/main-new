@@ -32,7 +32,7 @@ export default function Home() {
               <HeroImg className="absolute -top-[8px]  pointer-events-none" src="/home/hero-image.png" alt="Hero Image" />
             </div>
             <div className="flex flex-col items-center justify-between gap-8  px-8">
-              <p className="font-Inter font-normal text-base text-center">We’re a passionate team of creatives and strategists committed to designing impactful digital experiences. At Digitcrib, we help your business stand out with bespoke web solutions that deliver results.</p>
+              <p className="font-Inter font-normal text-base text-center">We’re a passgvibuuhbiuhionate team of creatives and strategists committed to designing impactful digital experiences. At Digitcrib, we help your business stand out with bespoke web solutions that deliver results.</p>
               <ContactFormButton text={"BECOME OUR CLIENT"} />             
             </div>  
             <div className="flex justify-center items-center gap-x-2">
