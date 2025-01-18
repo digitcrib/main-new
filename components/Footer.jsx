@@ -30,9 +30,9 @@ function Footer() {
             </div>
             <FooterImg1 className="w-full h-auto pointer-events-none"/>
             <div className='w-full text-white'>
-                <p className='cursor-pointer font-Space_Grotesk font-light text-right mb-2 pr-1'>Privacy Policy</p>
+                <p className='cursor-pointer font-Inter texr-[10px] font-light text-right mb-2 pr-1'>Privacy Policy</p>
                 <FooterImg2 className="w-full h-auto pointer-events-none"/>
-                <p className='font-Space_Grotesk font-light text-center px-8 mt-2'>All copyrights are reserved by @digitcrib</p>
+                <p className=' font-Inter texr-[10px] font-light text-center px-8 mt-2'>All copyrights are reserved by @digitcrib</p>
             </div>
         </div>
       </div>
