@@ -1,9 +1,5 @@
-"use client";
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { NAV_LINKS, SOCIALS_URL } from '@/constants';
-import { motion } from 'framer-motion';
-
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

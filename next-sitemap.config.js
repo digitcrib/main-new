@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://digitcrib.com', 
+    siteUrl: 'https://mahmoodfarooqui.in  ', 
     generateRobotsTxt: true,
     robotsTxtOptions: {
       policies: [

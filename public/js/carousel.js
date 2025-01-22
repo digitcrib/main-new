@@ -1,8 +1,8 @@
-import KeenSlider from 'keen-slider'
+import KeenSlider from 'keen-slider';
 
-    export const keenSlider = new KeenSlider(
-    '#keen-slider',
-    {
+export const keenSlider = (sliderElement) => {
+  if (typeof window !== 'undefined') {
+    new KeenSlider(sliderElement, {
       loop: true,
       slides: {
         origin: 'center',
@@ -18,9 +18,6 @@ import KeenSlider from 'keen-slider'
           },
         },
       },
-    },
-    []
-  )
-
-
-
+    });
+  }
+};

@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import 'keen-slider/keen-slider.min.css'
 import { keenSlider } from '/public/js/carousel';
 
-
-
 function RoadmapCarousel() {
 
   useEffect(() => {
