@@ -13,7 +13,7 @@ function Footer() {
     <>
       <div className="py-10 bg-[#1C1C1C] rounded-t-3xl">
         <div className='flex flex-col items-center justify-center'>
-            <div className='text-white flex flex-col items-center justify-center gap-6 px-8'>
+            <div className='text-white flex flex-col items-center justify-center gap-6 px-4'>
                 <div className='w-full flex items-center justify-between gap-0'>
                     <TextLogo className="pointer-events-none" />
                     <h4 className='w-[7rem] text-[#BBBBBB] font-Inter font-extrabold leading-[100%]'>Your Journey Starts with us</h4>

@@ -1,35 +1,19 @@
   // NAVIGATION
   export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'HOME' },
-    { href: '/about', key: 'about', label: 'ABOUT' },
-    { href: '/gallery', key: 'gallery', label: 'GALLERY' },
-    { href: 'mailto:mahmood.farooqui@gmail.com', key: 'contact', label: 'CONTACT' },
-    { href: '/', key: 'events', label: 'EVENTS' },
+    { href: '#our-services', key: 'our services', label: 'OUR SERVICES' },
+    { href: '#our-portfolio', key: 'our portfolio', label: 'OUR PORTFOLIO' },
+    { href: '#about', key: 'about', label: 'ABOUT' },
+    { href: '#faq', key: 'faq', label: "FAQ's" },
+    { href: 'mailto:digitcrib@gmail.com?subject=Let’s%20Build%20Something%20Awesome%20Together!', key: 'contact', label: 'CONTACT' },
   ];
   
    // SOCIAL LINKS
    export const SOCIAL_LINKS = [
-    { href: 'https://www.instagram.com/dastangoi_collective/?hl=en', key: 'instagram', label: 'INSTAGRAM' },
-    { href: 'https://twitter.com/dastangoitheart?lang=en', key: 'twitter', label: 'TWITTER' },
-    { href: 'https://www.youtube.com/@dastangoitheart', key: 'youtube', label: 'YOUTUBE' },
+    { src: '/instagram.svg', href: 'https://www.instagram.com/digitcrib', key: 'instagram', label: 'INSTAGRAM' },
+    { src: '/twitter.svg', href: 'https://twitter.com/digitcrib', key: 'twitter', label: 'TWITTER' },
+    { src: '/facebook.svg', href: 'https://www.facebook.com/digitcrib', key: 'facebook', label: 'FACEBOOK' },
   ];
-
-  // SOCIALS SECTION
-  export const SOCIALS_URL = [
-    {
-      src: '/navbar/instagram.svg',
-      href: 'https://www.instagram.com/dastangoi_collective/?hl=en',
-    },
-    {
-      src: '/navbar/tx.svg',
-      href: 'https://twitter.com/dastangoitheart?lang=en',
-    },
-    {
-      src: '/navbar/youtube.svg',
-      href: 'https://www.youtube.com/@dastangoitheart',
-    },
-  ];
-  
 
     // footer
     export const FOOT_LINKS = [

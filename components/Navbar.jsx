@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { NAV_LINKS, SOCIAL_LINKS } from '@/constants';
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,24 +62,24 @@ export default function Navbar() {
         <nav className="flex flex-col items-center justify-between h-full space-y-6">
 
           <div className='w-full grid grid-cols-1 justify-items-center content-end sm:grid-cols-2  gap-y-6'>
-            {/* <div className="w-full flex flex-col justify-center items-center self-start">         
+            <div className="w-full flex flex-col justify-center items-center self-start">         
               <ul className="self-start w-full flex flex-col  gap-2 font-Noto_Sans text-2xl sm:text-4xl md:text-6xl lg:leading-[5rem] font-semibold">
                 {NAV_LINKS.map((link) => (
                   <li key={link.label} className='w-full'>
-                    <button onClick={() => handleNavigation(link.href)} className="text-white text-left w-full hover:text-white/60 transition-colors duration-300 ease-in-out">
+                    <button onClick={() => handleNavigation(link.href)} className="text-white font-Space_Grotesk text-4xl text-left w-full hover:text-white/60 transition-colors duration-300 ease-in-out">
                       {link.label}
                     </button>
                   </li>
                 ))}
               </ul>
-            </div> */}
+            </div>
 
           </div>
 
           <div className='w-full flex flex-col justify-center items-center sm:flex-row sm:justify-between gap-y-6'>     
             {/* Social Links */}
-            {/* <div className="self-start">
-              <div className="font-semibold md:text-2xl lg:text-[32px] opacity-[80%] uppercase mb-2">Follow Us</div>
+            <div className="self-start">
+              <div className="font-semibold md:text-2xl lg:text-[32px] opacity-[80%] uppercase mb-2 font-Space_Grotesk text-xl">Follow Us</div>
               <motion.div
               initial={{ x: 30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -85,7 +87,7 @@ export default function Navbar() {
               className="w-full flex flex-col justify-between items-end gap-6 text-white"
             >
               <div className="flex items-center justify-start gap-3">
-                {SOCIALS_URL.map((social, index) => (
+                {SOCIAL_LINKS.map((social, index) => (
                   <motion.div
                   whileHover={{ scale: 1.2 }}
                   key={index}
@@ -97,7 +99,7 @@ export default function Navbar() {
                 ))}
               </div>
               </motion.div>
-            </div> */}
+            </div>
 
           </div>
         </nav>
